@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>parent and child</title>
+    </head>
+    <body>
+        <script>
+            class Parent {
+                constructor(name) {
+                this.name = name;
+                }
+            }
+
+            class Child extends Parent {
+                constructor(name, childName) {
+                super(name);
+                this.childName = childName;
+                }
+            }
+
+const parent = new Parent("pradeep");
+const child = new Child("pradeep", "priya");
+
+console.log(parent.name);
+
+console.log(child.name);
+console.log(child.childName);
+        </script>
+    </body>
+</html>
